@@ -5,6 +5,7 @@ let inputBox = document.querySelector("#city");
 let joinNowTab = document.querySelector("#join_now");
 let registrationForm = document.querySelector("#registartion_form");
 let api;
+var api_key = config.API_KEY
 
 //****************************            When hit Enter            *********************************/
 inputBox.addEventListener("keyup", (e) => {
@@ -16,8 +17,7 @@ inputBox.addEventListener("keyup", (e) => {
 });
 
 function requestApi(inputVal) {
-  api = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&units=metric&appid=e572668bb21fee7042efec77137cc15c
-`;
+  api = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&units=metric&appid=${api_key}`;
   fetch_weather();
 }
 //****************************            When hit Enter            *********************************/
@@ -69,7 +69,7 @@ location_button.addEventListener("click", () => {
 
 function showPosition(position) {
   const { latitude, longitude } = position.coords;
-  api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=e572668bb21fee7042efec77137cc15c
+  api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api_key}
 `;
   fetch_weather();
 }
@@ -99,7 +99,7 @@ function hideLoading() {
 search_button.addEventListener("click", () => {
   displayLoading();
   let city = document.querySelector("#city").value;
-  api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=e572668bb21fee7042efec77137cc15c`;
+  api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${api_key}`;
 });
 
 search_button.addEventListener("click", fetch_weather);

@@ -29,7 +29,7 @@ h1, h2 {
  
 .top-content {
   padding: 210px 0;
-  background: url('/img/header\ 4.jpg') center center / cover no-repeat;
+  background: url('/img/header\ 1.jpg') center center / cover no-repeat;
 }
 
 .top-content .text {
@@ -297,10 +297,11 @@ none{
   color:#555;
 }
  section{
-  margin: 70px;
+  margin: 70px auto;
   padding: 20px;
   background: transparent;
   border-radius: 5px;
   width: 30%;
   font-family: 'Marcellus', serif;
  }
+ 
