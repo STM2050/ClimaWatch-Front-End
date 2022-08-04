@@ -1,16 +1,205 @@
-html{
-background: url("./img/snow.jpg");
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
 }
 
-header {
-  background-image: url("img/climate.jpeg");
+strong { font-weight: 600; }
+
+a, a:hover, a:focus {
+  color: #ac2fdd;
+  text-decoration: none;
+  transition: all .3s;
 }
+
+h1, h2 {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  color: #555;
+  line-height: 50px;
+}
+
+	
+/***** Top content *****/
+ 
+.top-content {
+  padding: 210px 0;
+  background: url('/img/header\ 1.jpg') center center / cover no-repeat;
+}
+
+.top-content .text {
+  color: #fff;
+}
+
+.top-content .text h1 {
+  margin-top: 25px;
+  color: #fff;
+}
+
+.top-content .description {
+  margin: 30px 0 10px 0;
+}
+
+.top-content .description p {
+  opacity: 0.8;
+}
+
+.top-content .top-big-link {
+  margin-top: 45px;
+}
+a{
+  text-decoration: none;
+  }
+  .search{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+  background: #2f3640;
+  }
+  .btn{
+  border-radius:50%;
+  background: #164e9d;
+  color: #ffffff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .text{
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding:0;
+  color: #fff;
+  font-size:16px;
+  transition: 0.6s;
+  line-height: 40px;
+  width: 0px;
+  }
+  ::placeholder{
+  padding-left:15px;
+  color: #ddd;
+  }
+  .search:hover> .text{
+  width: 350px;
+  padding: 0 5px;
+  transition: 0.4s;
+  }
+  @media(max-width: 841px){
+  .search:hover> .text{
+  width: 300px;
+  }
+  }
+  @media(max-width: 740px){
+  .search:hover> .text{
+  width: 250px;
+  }
+  }
+  @media(max-width: 640px){
+  .search:hover> .text{
+  width: 200px;
+  }
+  }
+  @media(max-width: 540px){
+  .search:hover> .text{
+  width: 160px;
+  }
+  .text{
+  line-height: 30px;
+  }
+  .search{
+  height: 30px;
+  }
+ #search_button{
+  width: 30px;
+  height: 30px;
+  }
+  }
+  @media(max-width: 461px){
+  .search:hover> .text{
+  width: 140px;
+  }
+  }
+  @media(max-width: 401px){
+  .search:hover> .text{
+  width: 110px;
+  }
+  }
+
 
 #clock{
   padding: 20px;
-  color:yellow
+  color:rgb(5, 5, 5)
 }
-
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+ }
+ .overlay:target {
+  visibility: visible;
+  opacity: 1;
+ }
+ 
+ .popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+ }
+ 
+ .popup h2 {
+  margin-top: 0;
+  color: rgb(254, 254, 254);
+  font-family: Tahoma, Arial, sans-serif;
+ }
+ .popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+ }
+ .popup .close:hover {
+  color: #fa3636;
+ }
+ .popup .content {
+  max-height: 30%;
+  overflow: auto;
+ }
+ 
+ @media screen and (max-width: 700px){
+  .box{
+  width: 70%;
+  }
+  .popup{
+  width: 70%;
+  }
+ }
 #loading{
   width: 2rem;
   height: 2rem;
@@ -43,10 +232,10 @@ header {
 }
 
 .tenpx{
-  margin: 10px;
-  padding: 20px;
+  margin: 1px;
+  padding: 2px;
   /* color: rgba(255, 255, 255, 0.903); */
-}
+ } 
 
 ._800{
   background-image: url("./img/clearSky.jpg");
@@ -83,7 +272,7 @@ header {
   background-image: url("./img/clouds.jpg");
   color: black;
 
-}
+} */ 
 
 none{
   background-image: url("");
@@ -92,6 +281,26 @@ none{
 
 #registartion_form{
   display: none;
-  color:burlywood;
+  background: transparent;
   margin-left: 50px;
 }
+#username{
+  background: transparent;
+  color:#555;
+}
+#name{
+  background: transparent;
+  color:#555;
+}
+#password{
+  background: transparent;
+  color:#555;
+}
+ section{
+  margin: 70px;
+  padding: 20px;
+  background: transparent;
+  border-radius: 5px;
+  width: 30%;
+  font-family: 'Marcellus', serif;
+ }
