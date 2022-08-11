@@ -286,3 +286,15 @@ h1.heading {
 footer{
   background: rgb(182, 180, 180);
 }
+#registration_btn{
+  background: linear-gradient(rgb(57, 57, 231), rgb(92, 166, 230)) ;
+    color: #fff;
+    border-radius:0;
+    border-color:rgb(49, 49, 49);
+}
+#signin_btn{
+  background: linear-gradient(rgb(57, 57, 231), rgb(92, 166, 230)) ;
+    color: #fff;
+    border-radius:0;
+    border-color:rgb(49, 49, 49);
+}
