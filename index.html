@@ -16,10 +16,6 @@
     <header>
       <nav class="navbar bg-transparent">
         <div class="container">
-          <a class="navbar-brand" href="/index.html">
-            <img src="/img/cyclone.png" alt="" width="50" height="44">
-            ClimaWatch
-          </a><div id = "clock" onload="currentTime()"></div>
           <ul class="nav">
             <li class="nav-item">
             </li>
@@ -36,8 +32,14 @@
             <span><a id="user_log_failed" class="twentypx"><u></u></a></span>
           </ul>
        
-         
-        <div>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/cyclone.png" alt="" width="50" height="44">
+            ClimaWatch
+          </a><div id = "clock" onload="currentTime()"></div>
+        </div>
+      <div>
+      </nav>
+      <div>
         <form id="signin_form">
           <input type="text" id="user_name" placeholder="Username">
           <input type="password" id="user_password" placeholder="Password">
@@ -54,11 +56,6 @@
           <button type="button" class="center-text" id="registration_btn">Join Now</button>
         </form>
       </div>
-     
-    </div>
-      <div>
-      </nav>
-      
         <form>
           <label for="city" class="twentypx">Location:</label>
           <input id="city" class= "search" type="text" placeholder="Enter City Name..."/>
