@@ -15,6 +15,10 @@
   <body>
     <header>
       <nav class="navbar bg-transparent">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/img/cyclone.png" alt="" width="50" height="44">
+            ClimaWatch
+          </a>
         <div class="container">
           <ul class="nav">
             <li class="nav-item">
@@ -27,18 +31,17 @@
             </li>
             <li class="nav-item">
               <span><a id="sign_out" class="twentypx"><u>Log out</u></a></span>
-            </li>
+            </li>  
+           
             <span><a id="user_info" class="twentypx"><u></u></a></span>
             <span><a id="user_log_failed" class="twentypx"><u></u></a></span>
+            
           </ul>
-       
-          <a class="navbar-brand" href="/index.html">
-            <img src="/img/cyclone.png" alt="" width="50" height="44">
-            ClimaWatch
-          </a><div id = "clock" onload="currentTime()"></div>
+        <div id = "clock" onload="currentTime()"></div>
         </div>
       <div>
-      </nav>
+      </nav> 
+      
       <div>
         <form id="signin_form">
           <input type="text" id="user_name" placeholder="Username">
